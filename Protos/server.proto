@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option csharp_namespace = "server";
+
+package greet;
+
+import "google/protobuf/empty.proto";
+
+service ServerClient {
+  rpc Get(GetUserRequest) returns (UserReply);
+  rpc Set(SetUserRequest) returns (UserReply);
+}
+
+message SetUserRequest{
+  string id=1;
+  string name=2;
+}
+
+message GetUserRequest{
+  string id =1;
+}
+
+message UserReply{
+  string id = 1;
+  string name=2;
+}

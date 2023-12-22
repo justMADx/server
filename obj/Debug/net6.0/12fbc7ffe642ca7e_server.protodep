@@ -1,0 +1,3 @@
+obj\Debug\net6.0\Protos/Server.cs \
+obj\Debug\net6.0\Protos/ServerGrpc.cs: C:/Users/maksi/.nuget/packages/grpc.tools/2.59.0/build/native/include/google/protobuf/empty.proto\
+ Protos/server.proto
